@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0291C3682BC922A400126D49 /* chatui_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0291C3672BC922A400126D49 /* chatui_iosApp.swift */; };
+		0291C36A2BC922A400126D49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0291C3692BC922A400126D49 /* ContentView.swift */; };
+		0291C36C2BC922A600126D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0291C36B2BC922A600126D49 /* Assets.xcassets */; };
+		0291C36F2BC922A600126D49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0291C36E2BC922A600126D49 /* Preview Assets.xcassets */; };
+		0291C3792BC922A600126D49 /* chatui_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0291C3782BC922A600126D49 /* chatui_iosTests.swift */; };
+		0291C3832BC922A600126D49 /* chatui_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0291C3822BC922A600126D49 /* chatui_iosUITests.swift */; };
+		0291C3852BC922A600126D49 /* chatui_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0291C3842BC922A600126D49 /* chatui_iosUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0291C3752BC922A600126D49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0291C35C2BC922A400126D49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0291C3632BC922A400126D49;
+			remoteInfo = "chatui-ios";
+		};
+		0291C37F2BC922A600126D49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0291C35C2BC922A400126D49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0291C3632BC922A400126D49;
+			remoteInfo = "chatui-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0291C3642BC922A400126D49 /* chatui-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chatui-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0291C3672BC922A400126D49 /* chatui_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatui_iosApp.swift; sourceTree = "<group>"; };
+		0291C3692BC922A400126D49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0291C36B2BC922A600126D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0291C36E2BC922A600126D49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0291C3742BC922A600126D49 /* chatui-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "chatui-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0291C3782BC922A600126D49 /* chatui_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatui_iosTests.swift; sourceTree = "<group>"; };
+		0291C37E2BC922A600126D49 /* chatui-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "chatui-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0291C3822BC922A600126D49 /* chatui_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatui_iosUITests.swift; sourceTree = "<group>"; };
+		0291C3842BC922A600126D49 /* chatui_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatui_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0291C3612BC922A400126D49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0291C3712BC922A600126D49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0291C37B2BC922A600126D49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0291C35B2BC922A400126D49 = {
+			isa = PBXGroup;
+			children = (
+				0291C3662BC922A400126D49 /* chatui-ios */,
+				0291C3772BC922A600126D49 /* chatui-iosTests */,
+				0291C3812BC922A600126D49 /* chatui-iosUITests */,
+				0291C3652BC922A400126D49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0291C3652BC922A400126D49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0291C3642BC922A400126D49 /* chatui-ios.app */,
+				0291C3742BC922A600126D49 /* chatui-iosTests.xctest */,
+				0291C37E2BC922A600126D49 /* chatui-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0291C3662BC922A400126D49 /* chatui-ios */ = {
+			isa = PBXGroup;
+			children = (
+				0291C3672BC922A400126D49 /* chatui_iosApp.swift */,
+				0291C3692BC922A400126D49 /* ContentView.swift */,
+				0291C36B2BC922A600126D49 /* Assets.xcassets */,
+				0291C36D2BC922A600126D49 /* Preview Content */,
+			);
+			path = "chatui-ios";
+			sourceTree = "<group>";
+		};
+		0291C36D2BC922A600126D49 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0291C36E2BC922A600126D49 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0291C3772BC922A600126D49 /* chatui-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				0291C3782BC922A600126D49 /* chatui_iosTests.swift */,
+			);
+			path = "chatui-iosTests";
+			sourceTree = "<group>";
+		};
+		0291C3812BC922A600126D49 /* chatui-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0291C3822BC922A600126D49 /* chatui_iosUITests.swift */,
+				0291C3842BC922A600126D49 /* chatui_iosUITestsLaunchTests.swift */,
+			);
+			path = "chatui-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0291C3632BC922A400126D49 /* chatui-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0291C3882BC922A600126D49 /* Build configuration list for PBXNativeTarget "chatui-ios" */;
+			buildPhases = (
+				0291C3602BC922A400126D49 /* Sources */,
+				0291C3612BC922A400126D49 /* Frameworks */,
+				0291C3622BC922A400126D49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "chatui-ios";
+			productName = "chatui-ios";
+			productReference = 0291C3642BC922A400126D49 /* chatui-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0291C3732BC922A600126D49 /* chatui-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0291C38B2BC922A600126D49 /* Build configuration list for PBXNativeTarget "chatui-iosTests" */;
+			buildPhases = (
+				0291C3702BC922A600126D49 /* Sources */,
+				0291C3712BC922A600126D49 /* Frameworks */,
+				0291C3722BC922A600126D49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0291C3762BC922A600126D49 /* PBXTargetDependency */,
+			);
+			name = "chatui-iosTests";
+			productName = "chatui-iosTests";
+			productReference = 0291C3742BC922A600126D49 /* chatui-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0291C37D2BC922A600126D49 /* chatui-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0291C38E2BC922A600126D49 /* Build configuration list for PBXNativeTarget "chatui-iosUITests" */;
+			buildPhases = (
+				0291C37A2BC922A600126D49 /* Sources */,
+				0291C37B2BC922A600126D49 /* Frameworks */,
+				0291C37C2BC922A600126D49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0291C3802BC922A600126D49 /* PBXTargetDependency */,
+			);
+			name = "chatui-iosUITests";
+			productName = "chatui-iosUITests";
+			productReference = 0291C37E2BC922A600126D49 /* chatui-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0291C35C2BC922A400126D49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					0291C3632BC922A400126D49 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					0291C3732BC922A600126D49 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 0291C3632BC922A400126D49;
+					};
+					0291C37D2BC922A600126D49 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 0291C3632BC922A400126D49;
+					};
+				};
+			};
+			buildConfigurationList = 0291C35F2BC922A400126D49 /* Build configuration list for PBXProject "chatui-ios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0291C35B2BC922A400126D49;
+			productRefGroup = 0291C3652BC922A400126D49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0291C3632BC922A400126D49 /* chatui-ios */,
+				0291C3732BC922A600126D49 /* chatui-iosTests */,
+				0291C37D2BC922A600126D49 /* chatui-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0291C3622BC922A400126D49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0291C36F2BC922A600126D49 /* Preview Assets.xcassets in Resources */,
+				0291C36C2BC922A600126D49 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0291C3722BC922A600126D49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0291C37C2BC922A600126D49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0291C3602BC922A400126D49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0291C36A2BC922A400126D49 /* ContentView.swift in Sources */,
+				0291C3682BC922A400126D49 /* chatui_iosApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0291C3702BC922A600126D49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0291C3792BC922A600126D49 /* chatui_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0291C37A2BC922A600126D49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0291C3852BC922A600126D49 /* chatui_iosUITestsLaunchTests.swift in Sources */,
+				0291C3832BC922A600126D49 /* chatui_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0291C3762BC922A600126D49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0291C3632BC922A400126D49 /* chatui-ios */;
+			targetProxy = 0291C3752BC922A600126D49 /* PBXContainerItemProxy */;
+		};
+		0291C3802BC922A600126D49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0291C3632BC922A400126D49 /* chatui-ios */;
+			targetProxy = 0291C37F2BC922A600126D49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0291C3862BC922A600126D49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0291C3872BC922A600126D49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0291C3892BC922A600126D49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"chatui-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = K49Q5J87PG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.driansetti.chatui-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0291C38A2BC922A600126D49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"chatui-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = K49Q5J87PG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.driansetti.chatui-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0291C38C2BC922A600126D49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K49Q5J87PG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.driansetti.chatui-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chatui-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/chatui-ios";
+			};
+			name = Debug;
+		};
+		0291C38D2BC922A600126D49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K49Q5J87PG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.driansetti.chatui-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chatui-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/chatui-ios";
+			};
+			name = Release;
+		};
+		0291C38F2BC922A600126D49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K49Q5J87PG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.driansetti.chatui-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "chatui-ios";
+			};
+			name = Debug;
+		};
+		0291C3902BC922A600126D49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K49Q5J87PG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.driansetti.chatui-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "chatui-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0291C35F2BC922A400126D49 /* Build configuration list for PBXProject "chatui-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0291C3862BC922A600126D49 /* Debug */,
+				0291C3872BC922A600126D49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0291C3882BC922A600126D49 /* Build configuration list for PBXNativeTarget "chatui-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0291C3892BC922A600126D49 /* Debug */,
+				0291C38A2BC922A600126D49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0291C38B2BC922A600126D49 /* Build configuration list for PBXNativeTarget "chatui-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0291C38C2BC922A600126D49 /* Debug */,
+				0291C38D2BC922A600126D49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0291C38E2BC922A600126D49 /* Build configuration list for PBXNativeTarget "chatui-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0291C38F2BC922A600126D49 /* Debug */,
+				0291C3902BC922A600126D49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0291C35C2BC922A400126D49 /* Project object */;
+}
