@@ -10,13 +10,14 @@ import SwiftData
 import Realm
 import RealmSwift
 
-class ChatViewModel: ObservableObject {
+class ChatViewModel: ObservableObject{
+    
     @Published var messageViewModels: [MessageViewModel] = []
     @Published var inputText: String = ""
-    
-    init() {
-        loadMessagesFromRealm()
-    }
+     
+     init() {
+         loadMessagesFromRealm()
+     }
     
     func loadMessagesFromRealm() {
         do {
@@ -30,7 +31,6 @@ class ChatViewModel: ObservableObject {
             let receivedMessages: [MessageViewModel] = [
                 MessageViewModel(text: "Ciao!", timestamp: Date().addingTimeInterval(-20), isSent: false),
                 MessageViewModel(text: "How are you?", timestamp: Date().addingTimeInterval(-30), isSent: false)
-                // Add more received messages as needed
             ]
             
             // Combine received messages with saved messages
@@ -62,15 +62,17 @@ class ChatViewModel: ObservableObject {
             print("Error saving message to Realm: \(error.localizedDescription)")
         }
     }
+    
+    // Function to calculate time difference between messages
+    func timeDifference(from previous: Date, to current: Date) -> TimeInterval {
+        return current.timeIntervalSince(previous)
+    }
+    
+    
+    
 }
-// TODO: move structure 
+// TODO: move Realm structure
 class Message: Object {
     @objc dynamic var text: String = ""
     @objc dynamic var timestamp: Date = Date()
 }
-
-struct MessageData: Codable {
-    let text: String
-    let timestamp: Date
-}
-

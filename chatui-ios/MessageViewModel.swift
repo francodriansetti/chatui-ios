@@ -7,15 +7,22 @@
 
 import Foundation
 
-class MessageViewModel: ObservableObject, Identifiable {
+class MessageViewModel: Identifiable {
     let id = UUID()
     let text: String
     let timestamp: Date
-    let isSent: Bool 
+    let isSent: Bool
+    var isGroupedWithPrevious: Bool = false
     
     init(text: String, timestamp: Date, isSent: Bool) {
         self.text = text
         self.timestamp = timestamp
         self.isSent = isSent
+    }
+    
+    var formattedDate: String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd MMMM yyyy"
+        return formatter.string(from: timestamp)
     }
 }

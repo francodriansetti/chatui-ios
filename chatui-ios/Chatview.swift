@@ -8,29 +8,39 @@
 import SwiftUI
 
 struct ChatView: View {
+    
     @StateObject var chatViewModel: ChatViewModel = ChatViewModel()
+    
+    // MARK: Private property
+    private var scrollToBottom = false
     
     var body: some View {
         VStack {
-            ScrollView {
-                LazyVStack(spacing: 10) {
-                    ForEach(chatViewModel.messageViewModels) { messageViewModel in
-                        MessageView(messageViewModel: messageViewModel)
+            ScrollViewReader { value in
+                ScrollView {
+                    LazyVStack(spacing: 2) {
+                        ForEach(chatViewModel.messageViewModels.indices, id: \.self) { index in
+                            let messageViewModel = chatViewModel.messageViewModels[index]
+                            MessageView(messageViewModel: messageViewModel, chatViewModel: chatViewModel).id(index)
+                        }
                     }
-                }
-                .padding()
-            }
-            
-            HStack {
-                TextField("Type a message", text: $chatViewModel.inputText, onCommit: chatViewModel.sendMessage)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
+                }.defaultScrollAnchor(.bottom)
                 
-                Button(action: chatViewModel.sendMessage) {
-                    Image(systemName: "paperplane.fill")
-                        .foregroundColor(.blue)
-                        .font(.system(size: 20))
+                HStack {
+                    TextField("Type a message", text: $chatViewModel.inputText, onCommit: chatViewModel.sendMessage)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding()
+                    Button(action: {
+                        chatViewModel.sendMessage()
+                        value.scrollTo(chatViewModel.messageViewModels.count, anchor: .bottom)
+                    }
+                           , label: {
+                        Image(systemName: "paperplane.fill")
+                            .foregroundColor(.blue)
+                            .font(.system(size: 20))
+                            .padding()
+                    })
                 }
             }
         }
@@ -38,13 +48,13 @@ struct ChatView: View {
 }
 
 
-struct ChatView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            ChatView()
-        }
-    }
-}
+//struct ChatView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        NavigationView {
+//            ChatView()
+//        }
+//    }
+//}
 
 struct ChatBubble: Shape {
     var isFromCurrentUser: Bool
