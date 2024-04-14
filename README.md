@@ -45,11 +45,4 @@ In the implementation of this project, the following assumptions and decisions w
 -   **Data Persistence:** Realm was chosen for message persistence and solution for storing chat data.
 -   **Testing:** An example of unit tests is included 
 
-
-**License:**
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-Thank you for your interest and participation in this exercise!
-
 **Franco Driansetti**
