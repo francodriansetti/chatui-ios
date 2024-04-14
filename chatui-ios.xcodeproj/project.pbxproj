@@ -175,11 +175,11 @@
 		029C21F52BCBCD45005E4329 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				029C22072BCBD13D005E4329 /* UseCase */,
-				029C22042BCBD025005E4329 /* Repository */,
-				029C21F82BCBCD6E005E4329 /* Model */,
-				029C21F72BCBCD59005E4329 /* ViewModel */,
 				029C21F62BCBCD50005E4329 /* View */,
+				029C21F72BCBCD59005E4329 /* ViewModel */,
+				029C22042BCBD025005E4329 /* Repository */,
+				029C22072BCBD13D005E4329 /* UseCase */,
+				029C21F82BCBCD6E005E4329 /* Model */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -196,8 +196,8 @@
 		029C21F72BCBCD59005E4329 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				0291C3952BC9255B00126D49 /* MessageViewModel.swift */,
 				0291C3972BC9259200126D49 /* ChatViewModel.swift */,
+				0291C3952BC9255B00126D49 /* MessageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
