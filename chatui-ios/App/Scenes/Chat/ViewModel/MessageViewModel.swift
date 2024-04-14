@@ -12,7 +12,6 @@ class MessageViewModel: Identifiable {
     let text: String
     let timestamp: Date
     let isSent: Bool
-    var isGroupedWithPrevious: Bool = false
     
     init(text: String, timestamp: Date, isSent: Bool) {
         self.text = text
@@ -20,9 +19,5 @@ class MessageViewModel: Identifiable {
         self.isSent = isSent
     }
     
-    var formattedDate: String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "dd MMMM yyyy HH:mm:ss"
-        return formatter.string(from: timestamp)
-    }
+    
 }

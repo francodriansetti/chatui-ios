@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0291C3682BC922A400126D49 /* chatui_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0291C3672BC922A400126D49 /* chatui_iosApp.swift */; };
-		0291C36A2BC922A400126D49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0291C3692BC922A400126D49 /* ContentView.swift */; };
 		0291C36C2BC922A600126D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0291C36B2BC922A600126D49 /* Assets.xcassets */; };
 		0291C36F2BC922A600126D49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0291C36E2BC922A600126D49 /* Preview Assets.xcassets */; };
 		0291C3792BC922A600126D49 /* chatui_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0291C3782BC922A600126D49 /* chatui_iosTests.swift */; };
@@ -20,6 +19,14 @@
 		0291C3982BC9259200126D49 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0291C3972BC9259200126D49 /* ChatViewModel.swift */; };
 		0291C39B2BC9302700126D49 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 0291C39A2BC9302700126D49 /* Realm */; };
 		0291C39D2BC9302700126D49 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0291C39C2BC9302700126D49 /* RealmSwift */; };
+		029C21FA2BCBCEDF005E4329 /* MessageModelRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C21F92BCBCEDF005E4329 /* MessageModelRealm.swift */; };
+		029C21FF2BCBCF9F005E4329 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C21FE2BCBCF9F005E4329 /* RealmManager.swift */; };
+		029C22022BCBCFD4005E4329 /* MessageRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C22012BCBCFD4005E4329 /* MessageRepositoryImpl.swift */; };
+		029C22062BCBD03C005E4329 /* MessageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C22052BCBD03C005E4329 /* MessageRepository.swift */; };
+		029C22092BCBD152005E4329 /* SendMessageUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C22082BCBD152005E4329 /* SendMessageUseCaseImpl.swift */; };
+		029C220B2BCBD162005E4329 /* LoadMessagesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C220A2BCBD162005E4329 /* LoadMessagesUseCase.swift */; };
+		029C22112BCBD25C005E4329 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C22102BCBD25C005E4329 /* Date+Extensions.swift */; };
+		029C22132BCBE1DC005E4329 /* ChatViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C22122BCBE1DC005E4329 /* ChatViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +49,6 @@
 /* Begin PBXFileReference section */
 		0291C3642BC922A400126D49 /* chatui-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chatui-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0291C3672BC922A400126D49 /* chatui_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatui_iosApp.swift; sourceTree = "<group>"; };
-		0291C3692BC922A400126D49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0291C36B2BC922A600126D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0291C36E2BC922A600126D49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0291C3742BC922A600126D49 /* chatui-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "chatui-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +60,14 @@
 		0291C3932BC923EC00126D49 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		0291C3952BC9255B00126D49 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
 		0291C3972BC9259200126D49 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		029C21F92BCBCEDF005E4329 /* MessageModelRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModelRealm.swift; sourceTree = "<group>"; };
+		029C21FE2BCBCF9F005E4329 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		029C22012BCBCFD4005E4329 /* MessageRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRepositoryImpl.swift; sourceTree = "<group>"; };
+		029C22052BCBD03C005E4329 /* MessageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRepository.swift; sourceTree = "<group>"; };
+		029C22082BCBD152005E4329 /* SendMessageUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageUseCaseImpl.swift; sourceTree = "<group>"; };
+		029C220A2BCBD162005E4329 /* LoadMessagesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMessagesUseCase.swift; sourceTree = "<group>"; };
+		029C22102BCBD25C005E4329 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		029C22122BCBE1DC005E4329 /* ChatViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,14 +120,10 @@
 		0291C3662BC922A400126D49 /* chatui-ios */ = {
 			isa = PBXGroup;
 			children = (
+				029C21F32BCBCD35005E4329 /* App */,
 				0291C3672BC922A400126D49 /* chatui_iosApp.swift */,
-				0291C3692BC922A400126D49 /* ContentView.swift */,
 				0291C36B2BC922A600126D49 /* Assets.xcassets */,
 				0291C36D2BC922A600126D49 /* Preview Content */,
-				0291C3912BC923D900126D49 /* Chatview.swift */,
-				0291C3932BC923EC00126D49 /* MessageView.swift */,
-				0291C3952BC9255B00126D49 /* MessageViewModel.swift */,
-				0291C3972BC9259200126D49 /* ChatViewModel.swift */,
 			);
 			path = "chatui-ios";
 			sourceTree = "<group>";
@@ -130,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				0291C3782BC922A600126D49 /* chatui_iosTests.swift */,
+				029C22122BCBE1DC005E4329 /* ChatViewModelTests.swift */,
 			);
 			path = "chatui-iosTests";
 			sourceTree = "<group>";
@@ -141,6 +152,128 @@
 				0291C3842BC922A600126D49 /* chatui_iosUITestsLaunchTests.swift */,
 			);
 			path = "chatui-iosUITests";
+			sourceTree = "<group>";
+		};
+		029C21F32BCBCD35005E4329 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				029C21F42BCBCD3C005E4329 /* Scenes */,
+				029C21FB2BCBCF68005E4329 /* Services */,
+				029C220C2BCBD235005E4329 /* Utils */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		029C21F42BCBCD3C005E4329 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				029C21F52BCBCD45005E4329 /* Chat */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		029C21F52BCBCD45005E4329 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				029C22072BCBD13D005E4329 /* UseCase */,
+				029C22042BCBD025005E4329 /* Repository */,
+				029C21F82BCBCD6E005E4329 /* Model */,
+				029C21F72BCBCD59005E4329 /* ViewModel */,
+				029C21F62BCBCD50005E4329 /* View */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		029C21F62BCBCD50005E4329 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0291C3912BC923D900126D49 /* Chatview.swift */,
+				0291C3932BC923EC00126D49 /* MessageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		029C21F72BCBCD59005E4329 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0291C3952BC9255B00126D49 /* MessageViewModel.swift */,
+				0291C3972BC9259200126D49 /* ChatViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		029C21F82BCBCD6E005E4329 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				029C21F92BCBCEDF005E4329 /* MessageModelRealm.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		029C21FB2BCBCF68005E4329 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				029C21FC2BCBCF6E005E4329 /* Persistence */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		029C21FC2BCBCF6E005E4329 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				029C22002BCBCFC7005E4329 /* Repository */,
+				029C21FD2BCBCF84005E4329 /* Database */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		029C21FD2BCBCF84005E4329 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				029C21FE2BCBCF9F005E4329 /* RealmManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		029C22002BCBCFC7005E4329 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				029C22012BCBCFD4005E4329 /* MessageRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		029C22042BCBD025005E4329 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				029C22052BCBD03C005E4329 /* MessageRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		029C22072BCBD13D005E4329 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				029C22082BCBD152005E4329 /* SendMessageUseCaseImpl.swift */,
+				029C220A2BCBD162005E4329 /* LoadMessagesUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		029C220C2BCBD235005E4329 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				029C220F2BCBD250005E4329 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		029C220F2BCBD250005E4329 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				029C22102BCBD25C005E4329 /* Date+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,10 +414,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0291C3942BC923EC00126D49 /* MessageView.swift in Sources */,
+				029C21FA2BCBCEDF005E4329 /* MessageModelRealm.swift in Sources */,
+				029C22062BCBD03C005E4329 /* MessageRepository.swift in Sources */,
+				029C22092BCBD152005E4329 /* SendMessageUseCaseImpl.swift in Sources */,
+				029C220B2BCBD162005E4329 /* LoadMessagesUseCase.swift in Sources */,
+				029C22112BCBD25C005E4329 /* Date+Extensions.swift in Sources */,
 				0291C3922BC923D900126D49 /* Chatview.swift in Sources */,
 				0291C3962BC9255B00126D49 /* MessageViewModel.swift in Sources */,
-				0291C36A2BC922A400126D49 /* ContentView.swift in Sources */,
 				0291C3982BC9259200126D49 /* ChatViewModel.swift in Sources */,
+				029C22022BCBCFD4005E4329 /* MessageRepositoryImpl.swift in Sources */,
+				029C21FF2BCBCF9F005E4329 /* RealmManager.swift in Sources */,
 				0291C3682BC922A400126D49 /* chatui_iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				029C22132BCBE1DC005E4329 /* ChatViewModelTests.swift in Sources */,
 				0291C3792BC922A600126D49 /* chatui_iosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

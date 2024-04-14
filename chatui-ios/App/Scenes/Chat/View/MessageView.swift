@@ -13,8 +13,9 @@ struct MessageView: View {
     
     var body: some View {
         VStack {
+            // MARK: - Header
             if shouldDisplayHeader() {
-                Text(messageViewModel.formattedDate)
+                Text(messageViewModel.timestamp.formattedDate)
                     .font(.caption)
                     .padding(.top, 8)
             }
@@ -24,11 +25,12 @@ struct MessageView: View {
                     Spacer()
                 }
                 
-                Text("\(messageViewModel.text) \(messageViewModel.timestamp)")
+                // MARK: - Message Text
+                Text("\(messageViewModel.text)")
                     .padding(10)
                     .background(messageViewModel.isSent ? Color.blue : Color.gray)
                     .foregroundColor(.white)
-                    .clipShape(ChatBubble(isFromCurrentUser: messageViewModel.isSent))
+                    .clipShape(ChatBubble())
                     .padding(.top, shouldReducePadding() ? 0 : 20)
                 
                 if !messageViewModel.isSent {
@@ -38,6 +40,8 @@ struct MessageView: View {
         }
     }
     
+    // MARK: - Private Methods
+    
     private func shouldReducePadding() -> Bool {
         guard let currentIndex = chatViewModel.messageViewModels.firstIndex(where: { $0.id == messageViewModel.id }) else {
             return false
@@ -45,11 +49,7 @@ struct MessageView: View {
         
         if currentIndex > 0 {
             let previousMessage = chatViewModel.messageViewModels[currentIndex - 1]
-            // TODO: remove debug logs 
-            print("Testing: \(previousMessage.text) with current \(messageViewModel.text)")
             let timeDifference = abs(previousMessage.timestamp.timeIntervalSince(messageViewModel.timestamp))
-            print("time difference \(timeDifference)")
-            print("should reduce: \(timeDifference <= 20)")
             return timeDifference <= 20
         }
         
@@ -69,13 +69,10 @@ struct MessageView: View {
         
         return false
     }
-
-
 }
 
 struct MessageBubble_Previews: PreviewProvider {
     static var previews: some View {
-      
         let model = MessageViewModel(text: "Ciao", timestamp: Date(), isSent: false)
         let modelChat = ChatViewModel()
         MessageView(messageViewModel: model, chatViewModel: modelChat)
@@ -83,3 +80,12 @@ struct MessageBubble_Previews: PreviewProvider {
             .padding()
     }
 }
+
+struct ChatBubble: Shape {
+    
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect, cornerRadius: 20)
+        return Path(path.cgPath)
+    }
+}
+
