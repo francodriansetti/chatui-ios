@@ -13,7 +13,7 @@ struct ChatView: View {
     
     // MARK: Private property
     private var scrollToBottom = false
-    
+    @FocusState private var hideKeyboard: Bool
     var body: some View {
         VStack {
             ScrollViewReader { value in
@@ -21,16 +21,22 @@ struct ChatView: View {
                     LazyVStack(spacing: 2) {
                         ForEach(chatViewModel.messageViewModels.indices, id: \.self) { index in
                             let messageViewModel = chatViewModel.messageViewModels[index]
-                            MessageView(messageViewModel: messageViewModel, chatViewModel: chatViewModel).id(index)
+                            MessageView(messageViewModel: messageViewModel, chatViewModel: chatViewModel).id(index).onTapGesture {
+                                hideKeyboard = false
+                            }
                         }
                     }
                     .padding()
                 }.defaultScrollAnchor(.bottom)
+                    .onTapGesture {
+                        hideKeyboard = false
+                    }
                 
                 HStack {
                     TextField("Type a message", text: $chatViewModel.inputText, onCommit: chatViewModel.sendMessage)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding()
+                        .focused($hideKeyboard)
                     Button(action: {
                         chatViewModel.sendMessage()
                         value.scrollTo(chatViewModel.messageViewModels.count, anchor: .bottom)
@@ -48,13 +54,13 @@ struct ChatView: View {
 }
 
 
-//struct ChatView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        NavigationView {
-//            ChatView()
-//        }
-//    }
-//}
+struct ChatView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationView {
+            ChatView()
+        }
+    }
+}
 
 struct ChatBubble: Shape {
     var isFromCurrentUser: Bool

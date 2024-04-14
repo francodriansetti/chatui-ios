@@ -22,7 +22,7 @@ class MessageViewModel: Identifiable {
     
     var formattedDate: String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd MMMM yyyy"
+        formatter.dateFormat = "dd MMMM yyyy HH:mm:ss"
         return formatter.string(from: timestamp)
     }
 }

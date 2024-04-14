@@ -29,7 +29,7 @@ struct MessageView: View {
                     .background(messageViewModel.isSent ? Color.blue : Color.gray)
                     .foregroundColor(.white)
                     .clipShape(ChatBubble(isFromCurrentUser: messageViewModel.isSent))
-                    .padding(.vertical, shouldReducePadding() ? 0 : 20)
+                    .padding(.top, shouldReducePadding() ? 0 : 20)
                 
                 if !messageViewModel.isSent {
                     Spacer()
@@ -73,11 +73,13 @@ struct MessageView: View {
 
 }
 
-// TODO: Add preview here 
-//struct MessageBubble_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MessageView(text: "Hello, how are you?")
-//            .previewLayout(.sizeThatFits)
-//            .padding()
-//    }
-//}
+struct MessageBubble_Previews: PreviewProvider {
+    static var previews: some View {
+      
+        let model = MessageViewModel(text: "Ciao", timestamp: Date(), isSent: false)
+        let modelChat = ChatViewModel()
+        MessageView(messageViewModel: model, chatViewModel: modelChat)
+            .previewLayout(.sizeThatFits)
+            .padding()
+    }
+}
