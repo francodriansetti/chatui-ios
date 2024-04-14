@@ -14,6 +14,7 @@ struct ChatView: View {
     // MARK: - Private Properties
     
     @FocusState private var isTextFieldFocused: Bool
+    @State private var isMessageSent: Bool = false
     
     var body: some View {
         VStack {
@@ -41,8 +42,11 @@ struct ChatView: View {
                             isTextFieldFocused = true
                         }
                     }, onCommit: {
-                        chatViewModel.sendMessage()
-                        isTextFieldFocused = false
+                        withAnimation {
+                            chatViewModel.sendMessage()
+                            isMessageSent = true
+                            isTextFieldFocused = false
+                        }
                     })
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
@@ -50,7 +54,10 @@ struct ChatView: View {
                     
                     
                     Button(action: {
-                        chatViewModel.sendMessage()
+                        withAnimation {
+                            chatViewModel.sendMessage()
+                            isMessageSent = true
+                        }
                     }, label: {
                         Image(systemName: "paperplane.fill")
                             .foregroundColor(.blue)
@@ -60,6 +67,17 @@ struct ChatView: View {
                 }
             }
         }
+        .onChange(of: isMessageSent, perform: { value in
+            // Reset the input text and animation flag after the message is sent
+            if value {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    withAnimation {
+                        isMessageSent = false
+                        chatViewModel.inputText = ""
+                    }
+                }
+            }
+        })
     }
     
     // MARK: - Private Methods
@@ -72,6 +90,7 @@ struct ChatView: View {
         scrollView.scrollTo(chatViewModel.messageViewModels.count - 1, anchor: .bottom)
     }
 }
+
 
 struct ChatView_Previews: PreviewProvider {
     static var previews: some View {
