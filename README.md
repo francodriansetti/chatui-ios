@@ -38,7 +38,7 @@ The application implements the following features and functionalities in complia
 -   Messages are grouped based on specific criteria:
     -   Messages separated by more than an hour are sectioned with the date and time.
     -   Messages from the same user sent within 20 seconds of each other have smaller vertical spacing, appearing grouped together.
--   Message persistence is implemented using Realm, CoreData, or SwiftData, ensuring data is stored locally for future retrieval.
+-   Message persistence is implemented using Realm.
 
 **Assumptions and Decisions:**
 
