@@ -6,6 +6,10 @@ This project is an iOS application aimed at creating a chat interface. The appli
 
 The app has been developed using Swift and SwiftUI.
 
+Demo app short video: 
+https://we.tl/t-VqbmEhl1kU
+
+
 **Project Structure:**
 
 The project follows clean architecture concept:
@@ -43,6 +47,14 @@ In the implementation of this project, the following assumptions and decisions w
 -   **UI Implementation:** The user interface was designed to closely resemble the provided screenshots while ensuring responsiveness and usability.
 -   **Architecture:** The project follows a modular architecture pattern, separating concerns and promoting maintainability.
 -   **Data Persistence:** Realm was chosen for message persistence and solution for storing chat data.
--   **Testing:** An example of unit tests is included 
+-   **Testing:** An example of unit tests is included
+
+**Improvments and ToDo's:**
+-   **Dependency injection (DI)** Consider to use third party libraries for DI such as Swinject
+-   **Message view model** Improve the view model
+-   **UI and usabilityl** Improve the chat view with better animations and usability 
+-   **Unit testing** Add coverage 80%
+-   
+
 
 **Franco Driansetti**
